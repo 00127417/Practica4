@@ -12,6 +12,9 @@
     font-family: sans-serif;
 }
 
+.black{
+    color:black;
+}
 
 header{
     display: flex;
@@ -22,6 +25,7 @@ header{
 header nav ul li{
     display: inline;
     list-style: none;
+    color: #7f888f;
 }
 
 p{
@@ -31,7 +35,8 @@ p{
 
 .panel{
     display: grid;
-    grid-template-columns: repeat(2,50%)
+    grid-template-columns: repeat(2,50%);
+    grid-gap: 5em
 }
 
 
@@ -48,9 +53,14 @@ p{
 }
 
 .panel-img img{
-    height: 70%;
-    width: 20em;
+    width: 70%;
     border-radius: 5px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.but-cont{
+    padding: 1em;
 }
 
 .button{
@@ -58,11 +68,32 @@ p{
     color: #f56a6a;
     border-color: #f56a6a;
     border-width: 1px;
-    padding: 0.5em 2em 0.5em 2em;
-    border-radius: 3px;
+    padding: 0.7em 3em 0.7em 3em;
+    border-radius: 5px;
+}
+.button:hover{
+    background-color: #f56a6a;
+    color: white;
 }
 
 .grid{
     display: grid;
     grid-template-columns: 50% 50%;
 } 
+
+.grid-p1{
+    display: grid;
+    grid-template-columns: 25% 75%
+}
+
+.grid-p1 .icon1{
+    font-size: 3.5em;
+    margin:auto;
+    color: #f56a6a;
+}
+
+.topic{
+    display: inline-block;
+    padding-right: 4em;
+    border-bottom: 0.3em solid #f56a6a;
+}
